@@ -22,3 +22,7 @@ graphite:
   port: 2003
   # we dont have access to graphite
   enabled: false
+  
+  my:
+    refreshable:
+      message: Hi htere! 1
