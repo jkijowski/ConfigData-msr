@@ -1,1 +1,31 @@
-# config
+
+my:
+  app:
+    id: reservation-${random.value}
+
+info:
+  artifactid: @project.artifactId@
+  version: @project.version@
+  instanceId: ${my.app.id}
+
+
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:~/test;AUTO_SERVER=TRUE;DB_CLOSE_ON_EXIT=FALSE
+
+management:
+  shell:
+    auth:
+      simple:
+        user:
+          name: user
+          password: pass
+
+graphite:
+  host: localhost
+  port: 2003
+  # we dont have access to graphite
+  enabled: false
