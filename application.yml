@@ -1,4 +1,7 @@
 
+XX
+  YY: msr
+  
 spring:
   h2:
     console:
