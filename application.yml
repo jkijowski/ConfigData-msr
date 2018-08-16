@@ -1,21 +1,14 @@
 
-XX:
-  YY: msr
-  
-spring:
-  h2:
-    console:
-      enabled: true
-  datasource:
-    url: jdbc:h2:~/test;AUTO_SERVER=TRUE;DB_CLOSE_ON_EXIT=FALSE
+info: 
+  component: ${spring.application.name} 
 
-management:
-  shell:
-    auth:
-      simple:
-        user:
-          name: user
-          password: pass
+this: 
+  is: 
+    some: 
+      common: 
+        prop: widoczne wszędzie ! dla każdej aplikacji, niezależnie od nazwy ! 
+
+---
 
 graphite:
   host: localhost
@@ -23,6 +16,3 @@ graphite:
   # we dont have access to graphite
   enabled: false
   
-  my:
-    refreshable:
-      message: Hi htere! 1
