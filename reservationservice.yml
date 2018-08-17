@@ -17,3 +17,6 @@ management:
   my:
     refreshable:
       message: Hi there! 1
+
+server:
+  port: 8091
