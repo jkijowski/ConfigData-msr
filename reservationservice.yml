@@ -19,4 +19,4 @@ management:
       message: Hi there! 1
 
 server:
-  port: 8092
+  port: 8091
